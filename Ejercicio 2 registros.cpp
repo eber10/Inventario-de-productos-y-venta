@@ -124,7 +124,12 @@ int main()
 				}
 				cout<<endl;
 				break;
-			
+			case 'H':
+				cout<<"el total de ventas es: S/. "<<agregar_ventas[k].precio_total<<endl;
+				cout<<endl;
+				break;
+			default:
+				break;
 		}
 	}
 	while(op!='S');
