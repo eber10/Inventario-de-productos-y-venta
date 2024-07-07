@@ -21,6 +21,7 @@ int main()
 {
 	producto agregar[100];
 	venta agregar_ventas[100];
+	string buscar;
 	int n=0;
 	char op;
 	do
@@ -52,6 +53,20 @@ int main()
 				{
 					cout<<i+1<<"\t"<<agregar[i].nombre<<"\t" \ 
 					<<"\t S/. "<<agregar[i].precio<<endl;
+				}
+				cout<<endl;
+				break;
+			case 'C':
+				cout<<"ingrese el nombre del producto: "; cin>>buscar;
+				for(int i=0; i<n; i++)
+				{
+					if(buscar==agregar[i].nombre)
+					{
+						cout<<"producto encontrado"<<endl;
+						cout<<"-------------------"<<endl;
+						cout<<"nombre:"<<agregar[i].nombre<<endl;
+						cout<<"precio: S/. "<<agregar[i].precio<<endl;
+					}
 				}
 				cout<<endl;
 				break;
