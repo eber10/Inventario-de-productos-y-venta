@@ -45,6 +45,16 @@ int main()
 				cout<<endl;
 				n++;
 				break;
+			case 'B':
+				cout<<"N.\tPRODUCTOS\tPRECIOS"<<endl;
+				cout<<"  \t---------\t--------"<<endl;
+				for(int i=0; i<n; i++)
+				{
+					cout<<i+1<<"\t"<<agregar[i].nombre<<"\t" \ 
+					<<"\t S/. "<<agregar[i].precio<<endl;
+				}
+				cout<<endl;
+				break;
 			
 		}
 	}
