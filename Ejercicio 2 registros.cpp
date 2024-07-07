@@ -21,6 +21,7 @@ int main()
 {
 	producto agregar[100];
 	venta agregar_ventas[100];
+	int n=0;
 	char op;
 	do
 	{
@@ -38,6 +39,12 @@ int main()
 		cin>>op;
 		switch(op)
 		{
+			case 'A':
+				cout<<"ingrese el nombre del producto: "; cin>>agregar[n].nombre;
+				cout<<"ingrese el precio del producto: "; cin>>agregar[n].precio;
+				cout<<endl;
+				n++;
+				break;
 			
 		}
 	}
