@@ -22,7 +22,7 @@ int main()
 	producto agregar[100];
 	venta agregar_ventas[100];
 	string buscar, actualizar, eliminar;
-	int n=0;
+	int n=0, m=0, k=0;
 	char op;
 	do
 	{
@@ -96,6 +96,21 @@ int main()
 					}
 				}
 				cout<<"producto eliminado"<<endl;
+				cout<<endl;
+				break;
+			case 'F':
+				cout<<"ingrese el ID de la venta: "; cin>>agregar_ventas[m].idventa;
+				cout<<"ingrese el nombre del producto: "; cin>>agregar_ventas[m].product;
+				cout<<"ingrese la cantidad: "; cin>>agregar_ventas[m].cantidad;
+				for(int i=0; i<n; i++)
+				{
+					if(agregar_ventas[m].product==agregar[i].nombre)
+					{
+						agregar_ventas[k].precio_total=agregar_ventas[k].precio_total+(agregar[i].precio*agregar_ventas[m].cantidad);
+					}
+				}
+				cout<<"venta registrada con exito."<<endl;
+				m++;
 				cout<<endl;
 				break;
 			
