@@ -113,6 +113,17 @@ int main()
 				m++;
 				cout<<endl;
 				break;
+			case 'G':
+				cout<<"\t  "<<"HISTORIAL DE VENTAS "<<endl;
+				cout<<"\t  "<<"--------------------"<<endl;
+				cout<<"N.\tID\tPRODUCTO\tCANTIDAD"<<endl;
+				for(int i=0; i<m; i++)
+				{
+					cout<<i+1<<"\t"<<agregar_ventas[i].idventa<<"\t" \
+					<<agregar_ventas[i].product<<"\t\t   "<<agregar_ventas[i].cantidad<<endl;
+				}
+				cout<<endl;
+				break;
 			
 		}
 	}
